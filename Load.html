@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/load.css">
+
+</head>
+
+<body>
+    <!-- popup table -->
+    <div class="popup-table">
+
+        <div class="title">BẢNG XẾP HẠNG
+            <div class="btn-close">
+                <a href="javascript:showPopupTableTop();"><img src="/img/photo_2022-12-26_13-42-45.jpg" alt=""></a>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>USERNAMES</th>
+                    <th>SERVER</th>
+                    <th>KNB</th>
+                </tr>
+            </thead>
+            <tbody id="load_data">
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <!-- end popup table -->
+
+
+
+    <!-- popup-email -->
+    <div class="popup">
+        <div class="popup-inner">
+            <!-- <div class="popup-close">
+                <a href="#"> <img src="/img/close.png" alt=""></a>
+            </div>
+            <div class="popup-input">
+                <input type="email" placeholder="Nhập email ...">
+            </div>
+            <div class="popup-confirm">
+                <a href="#"><img src="/img/btn-xacnhan.png" alt=""></a>
+            </div> -->
+
+
+
+            <form method="POST" id="promise_form" onsubmit="return;">
+                                    
+                <div class="form-group" style="margin-bottom:10px;">
+                    <div class="row">
+                        <div class="col-md-12"><input required="" class="form-control" type="email" id="email" name="email" placeholder="Nhập email của bạn ..."></div>
+                    </div>
+                </div>
+    
+            
+                <input type="submit" class="submit_promise" name="button" value="submit" onclick="POST_DATA()"> 
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./img/favicon.png" rel="shortcut icon" type="image/png">
+  <title>Thiên Hạ Anh Hùng</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--responsive mobile -->
+  <script src="./js/rpsMobile.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- The Modal -->
+    <div class="background">
+      <!---------------------------- pc ----------------------------------------------------------------->
+
+      <ul class="nav">
+        <li class="nav-seperate"><a href="#">NHẬP CODE</a></li>
+        <li class="nav-seperate"><a href="#">FANPAGE</a></li>
+        <li class="nav-seperate"><a href="#">HƯỚNG DẪN</a></li>
+        <li class=""><a href="#">CHAT VỚI ADMIN</a></li>
+      </ul>
+
+
+      <div class="btn-play">
+        <a href="javascript: showPopup();"><img class="btn-play-img" src="./img/btn-playtrailer.png" alt=""></a>
+      </div>
+      <!-- ------------------------modal box play--------------------------- -->
+      <div id="myModal" id="myModal" class="modal fade">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <a href="javascript: showPopup();"><span class="close">&times;</span></a>
+          <iframe width="100%" height="550" src="https://www.youtube.com/embed/1YFraGakAy8"
+            title="Thiên Hạ Anh Hùng 3Q - Game Việt" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- ------------------------modal box play--------------------------- -->
+
+
+      <div class="btn-center">
+        <div class="trangchu  ">
+          <a href="/Load.html"><img class="btn-trangchu-img" src="./img/btn-home.png" alt=""></a>
+        </div>
+        <div class="nhanqua ">
+          <a href="javascript:showPopupGift();"><img class="btn-nhanqua-img" src="./img/btn-nhanqua.png" alt=""></a>
+        </div>
+
+
+
+        <div class="napthe ">
+          <a href="#"><img class="btn-napthe-img" src="./img/btn-napthe.png" alt=""></a>
+        </div>
+      </div>
+      <div class="dowload">
+        <div class="appstore   dowload-item">
+          <a href="#"><img src="./img/btn-ios-v2.png" alt=""></a>
+        </div>
+
+
+        <div class="gg-play dowload-item">
+          <a href="#"><img src="./img/btn-android-v2.png" alt=""></a>
+        </div>
+
+        <div class="apk dowload-item">
+          <a href="#"><img src="./img/btn-apk.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="modal-content-gift">
+        <a href="javascript:showPopupGift();"><img class="gift-popup-close" src="./img/close.png" alt=""></a>
+        <input class="form-control" type="text" placeholder="Nhập email của bạn...">
+        <a href="javascript:showAlert();javascript:Load();"> <img class="xacnhan" src="./img/btn-xacnhan.png"
+            alt=""></a>
+        <h1 class="H1-Loading"></h1>
+      </div>
+
+
+
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <p>GAME ĐƯỢC BỘ THÔNG TIN VÀ TRUYỀN THÔNG CẤP PHÉP NỘI DUNG SỐ 1339/QĐ-BTTTT NGÀY 07/07/2022</p>
+      <p>GAME DO MIGAME PHÁT HÀNH TỪ ỦY QUYỀN CỦA ACE GAME CORPORATION</p>
+      <p>CHƠI QUÁ 180 PHÚT MỘT NGÀY SẼ ẢNH HƯỞNG XẤU ĐẾN SỨC KHỎE</p>
+      <p>HÃY CHƠI GAME ĐIỀU ĐỘ - GIỮ GÌN SỨC KHỎE - KHÔNG NẠP LẬU</p>
+      <ul>
+        <li class="seperate"><a href="#">HỖ TRỢ</a></li>
+        <li class="seperate"><a href="#">CÀI ĐẶT</a></li>
+        <li><a href="#">ĐIỀU KHOẢNG</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--  ----------------mobile------------------- -->
+
+  <div class="wrapper-mb">
+    <div class="background-mb">
+      <!-- btn-menu-mobile -->
+      <label for="nav-mobile-input" class="btn-menu-m">
+        <img src="./img/btn-menu-m.png" />
+
+      </label>
+      <input type="checkbox" id="nav-mobile-input" class="nav-input" />
+
+      <label for="nav-mobile-input" class="close-btn">
+        <a href="#"></a>
+      </label>
+
+      <!-- menu-mobile -->
+      <div class="menu-mob">
+        <img src="./img/bg-menu-mob.png" alt="">
+        <ul class="menu-list">
+          <li><a href="#">NHẬP CODE</a></li>
+          <li><a href="#">FANPAGE</a></li>
+          <li><a href="#">HƯỚNG DẪN</a></li>
+          <li><a href="#">CHAT VỚI ADMIN</a></li>
+        </ul>
+      </div>
+
+
+      <div class="btn-play">
+        <a href="#"><img class="btn-play-img" src="./img/btn-playtrailer.png" alt=""></a>
+      </div>
+
+      <div class="main-container">
+        <div class="btn-center-mb">
+          <div class="trangchu-mb">
+            <a href="#"><img class="btn-trangchu-img-mb" src="./img/btn-home.png" alt=""></a>
+          </div>
+          <div class="nhanqua-mb ">
+            <a href="#"><img class="btn-nhanqua-img-mb" src="./img/btn-nhanqua.png" alt=""></a>
+          </div>
+          <div class="napthe-mb ">
+            <a href="#"><img class="btn-napthe-img-mb" src="./img/btn-napthe.png" alt=""></a>
+          </div>
+        </div>
+        <div class="dowload-mb">
+          <div class="appstore-mb  dowload-item">
+            <a href="#"><img src="./img/btn-ios-v2.png" alt=""></a>
+          </div>
+          <div class="gg-play-mb dowload-item">
+            <a href="#"><img src="./img/btn-android-v2.png" alt=""></a>
+          </div>
+          <div class="apk-mb dowload-item">
+            <a href="#"><img src="./img/btn-apk.png" alt=""></a>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="footer-mb">
+          <p>GAME ĐƯỢC BỘ THÔNG TIN VÀ TRUYỀN THÔNG CẤP PHÉP NỘI DUNG SỐ 1339/QĐ-BTTTT NGÀY 07/07/2022</p>
+          <p>GAME DO MIGAME PHÁT HÀNH TỪ ỦY QUYỀN CỦA ACE GAME CORPORATION</p>
+          <p>CHƠI QUÁ 180 PHÚT MỘT NGÀY SẼ ẢNH HƯỞNG XẤU ĐẾN SỨC KHỎE</p>
+          <p>HÃY CHƠI GAME ĐIỀU ĐỘ - GIỮ GÌN SỨC KHỎE - KHÔNG NẠP LẬU</p>
+          <ul>
+            <li class="seperate"><a href="#">HỖ TRỢ</a></li>
+            <li class="seperate"><a href="#">CÀI ĐẶT</a></li>
+            <li><a href="#">ĐIỀU KHOẢNG</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Nhận diện thiết bị download-mobile -->
+
+  <script src="./js/index.js"></script>
+  <script src="./js/modalBox.js"></script>
+
+  <script>
+    console.log(navigator.userAgent)
+  </script>
+</body>
+
+</html>

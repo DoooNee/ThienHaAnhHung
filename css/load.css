@@ -1,0 +1,115 @@
+html,
+body {}
+
+.popup-table {
+    height: 350px;
+    margin: 0 auto;
+    display: none;
+    overflow-y: scroll;
+    width: 70%;
+    background-image: url(/img/photo_2022-12-26_11-06-06.jpg);
+    background-size: 100% 100%;
+    margin-top: 100px;
+
+}
+
+.container {}
+
+.table {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    color: rgb(241, 237, 237);
+    margin: 0 auto;
+    padding-top: 23px;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 17px;
+
+}
+
+.btn-close {
+    float: right;
+}
+
+.btn-close img {
+    width: 35px;
+    height: 35px;
+}
+
+#load_data {
+    text-align: center;
+}
+
+
+
+/* end popup table */
+
+
+.popup {
+    background-image: url(/img/popbg_userinfo.jpg);
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.popup-close {
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.popup-close img:hover{
+    filter: brightness(80%);
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+}
+
+
+
+.popup-input {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.popup-input input {
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 40px;
+    width: 80%;
+}
+
+.popup-confirm {
+    text-align: center;
+}
+
+.popup-confirm img{
+}
+
+.popup-confirm img:hover{
+    filter: brightness(80%);
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+
+}
+
+.submit_promise {
+    width: 35%;
+    background-image: url(/img/btn-xacnhan.png);    
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height:50px;
+    background-color: transparent;
+    border: none;
+}
+
+

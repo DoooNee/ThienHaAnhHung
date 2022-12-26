@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reseting */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* --------------------------------------- */
+.wrapper {
+    height: 100%;
+}
+
+.background {
+    position: relative;
+    height: 115vh;
+    /* height: 10000px; */
+    background-image: url(../img/bg-pc\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ----------nav-------- */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.nav li a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ede496;
+    padding: 0 8px;
+
+}
+
+
+
+.btn-play {
+    position: absolute;
+    top: 14%;
+    left: 53%;
+    animation: animate alternate .8s linear infinite;
+    width: 150px;
+
+}
+
+.btn-play-img {
+    width: 105px;
+
+}
+
+.nav-seperate {
+    border-right: 2px solid #ede496;
+}
+
+
+
+
+/* ---------- trangchu-------- */
+
+.btn-center {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%);
+    width: 100%;
+    justify-content: space-around;
+}
+
+.trangchu {}
+
+.btn-trangchu-img {
+    width: 160px;
+}
+
+
+.btn-trangchu-img:hover {
+    transform: scale(1.02);
+    transition: all 0.4s linear;
+    filter: brightness(130%);
+}
+
+.btn-napthe-img {
+    width: 160px;
+}
+
+.btn-napthe-img:hover {
+    transform: scale(1.02);
+    transition: all 0.4s linear;
+    filter: brightness(130%);
+}
+
+.btn-nhanqua-img {
+    width: 220px;
+    animation: animate alternate 0.6s linear infinite;
+
+}
+
+.btn-nhanqua-img:hover {
+    transform: scale(1.02);
+    transition: all 0.4s linear;
+    filter: brightness(130%);
+}
+
+
+
+
+
+
+/* -----------dowload----------- */
+
+
+.dowload {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%);
+    width: 60%;
+    text-align: center;
+}
+
+.dowload-item {
+    margin: 0 15px;
+}
+
+.appstore {
+
+    width: 100%;
+}
+
+.appstore img {
+    width: 80%;
+}
+
+.appstore:hover {
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+    filter: brightness(130%);
+}
+
+.gg-play {
+    width: 100%;
+}
+
+.gg-play img {
+    width: 80%;
+}
+
+.gg-play:hover {
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+    filter: brightness(130%);
+}
+
+
+.apk {
+
+    width: 100%;
+}
+
+.apk img {
+    width: 80%;
+}
+
+.apk:hover {
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+    filter: brightness(130%);
+}
+
+
+
+/* -----------footer--------- */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1d4c46;
+    /* height: 10000px; */
+    margin-top: -1px;
+    height: auto;
+
+
+}
+
+.footer p:first-child {
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer h3 {
+    color: rgb(255, 255, 255);
+
+}
+
+.footer p {
+    color: rgb(232, 230, 230);
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer li {
+    padding: 0 10px;
+}
+
+.footer li a {
+    color: black;
+}
+
+.seperate {
+    border-right: 2px solid rgb(199, 194, 194);
+}
+
+.wrapper-mb {
+    display: none;
+}
+
+
+
+/* ---------------------popup---------------------- */
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    width: 70%;
+    margin-top: -10px;
+}
+
+/* The Close Button */
+.close {
+    color: #e6e2e2;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(174, 168, 168);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* popup gift */
+
+
+
+.modal-content-gift {
+    background-image: url(../img/popbg_userinfo.jpg);
+    min-height: 350px;
+    margin-top: 250px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 180px;
+    text-align: center;
+    display: none;
+}
+
+
+
+.form-control {
+
+    width: 80%;
+    padding: 1.3vh;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border-radius: .25rem;
+    margin: 0 auto;
+    margin-top: 65px;
+
+}
+
+.modal-content-gift .xacnhan {
+    max-width: 174px;
+    margin-top: 30px;
+    
+}
+
+.gift-popup-close {
+    display: block;
+    margin: auto;
+    margin-right: 0;
+}
+
+
+/* none mobile */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------keyframes ---------- */
+
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+/* tablet */
+@media only screen and (max-width: 912px) {
+    .background {
+        /* background-image:url(../img/bg-m.jpg); */
+        /* background-size: 100%; */
+        background-position: top;
+
+        /* height: 1000px; */
+    }
+
+    .btn-center {
+        bottom: 16%;
+    }
+
+    .dowload {
+        bottom: 6%;
+        width: 100%;
+    }
+
+    .btn-play {
+        top: 18%;
+        left: 55%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------- reponsive mobile------------------------ */
+
+
+@media only screen and (max-width: 767px) {
+
+
+    .wrapper {
+        display: none;
+    }
+
+    .wrapper-mb {
+        display: block;
+
+    }
+
+    .background-mb {
+        /* height: 10000px; */
+        height: auto;
+        background-image: url(../img/bg-m.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #1d4c46;
+    }
+
+    .main-container {}
+
+    .btn-center-mb {
+        display: flex;
+        padding-top: 640px;
+        justify-content: space-around;
+    }
+
+    .btn-trangchu-img-mb {
+        width: 150px;
+    }
+
+    .btn-nhanqua-img-mb {
+        width: 220px;
+        animation: animate alternate 0.6s linear infinite;
+
+
+    }
+
+    .btn-napthe-img-mb {
+        width: 150px;
+
+    }
+
+    /* download */
+    .dowload-mb {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .appstore-mb {
+        width: 220px;
+    }
+
+    .appstore-mb img {
+        width: 100%;
+    }
+
+    .gg-play-mb {
+        width: 220px;
+    }
+
+    .gg-play-mb img {
+        width: 100%;
+    }
+
+    .apk-mb {
+        width: 220px;
+    }
+
+    .apk-mb img {
+        width: 100%;
+    }
+
+
+    /* btn-menu-mobile */
+    .btn-menu-m {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    .nav-input {
+        display: none;
+    }
+
+
+    .menu-mob {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 70%;
+        height: 100%;
+        transform: translateX(150%);
+        transition: .5s;
+    }
+
+    #nav-mobile-input:checked~.menu-mob {
+        transform: translateY(0%);
+    }
+
+    .menu-mob img {
+        width: 100%;
+        height: 68%;
+    }
+
+    .menu-list {
+        position: absolute;
+        top: 8%;
+        left: 20%;
+        line-height: 5;
+        width: 100%;
+
+    }
+
+    .menu-list li:hover {
+
+        background-color: #333;
+    }
+
+
+    .menu-list a {
+        color: #ede496;
+        font-size: 1.5rem;
+        line-height: 2;
+        font-weight: bold;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        width: 100px;
+        height: 75px;
+        background-color: transparent;
+        z-index: 2;
+    }
+
+
+    .btn-play {
+        top: 32%;
+        left: 62%;
+    }
+
+    .footer-mb {
+        text-align: center;
+        padding-bottom: 50px;
+        padding: 25px;
+        /* height: 10000px; */
+        /* height: auto; */
+        padding-top: 175px;
+    }
+
+    .footer-mb p:first-child {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .footer-mb h3 {
+        color: rgb(255, 255, 255);
+
+    }
+
+    .footer-mb p {
+        color: rgb(232, 230, 230);
+        padding: 5px 0;
+        font-size: 0.8rem;
+    }
+
+    .footer-mb ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mb li {
+        padding: 0 10px;
+    }
+
+    .footer-mb li a {
+        color: black;
+    }
+
+    .seperate {
+        border-right: 2px solid rgb(199, 194, 194);
+    }
+
+
+
+
+}
+
+
+
